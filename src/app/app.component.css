@@ -1,0 +1,43 @@
+.app{
+    display: flex;
+    max-width: 100vw;
+    max-height: 100vh;
+    min-width: 100vh;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    align-items: flex-start;
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    min-width: 100vw;
+    max-width: 100vw;
+}
+
+.main-screen{
+    background-color: #404040;
+    color: rgb(212, 212, 212);
+    flex-grow: 1;
+}
+
+.secondary-screen{
+    display: flex;
+    flex-direction: column;
+    background-color: #303030;
+    color: rgb(212, 212, 212);
+    min-width: 16rem;
+}
+
+.secondary-title{
+    min-height: 6rem;
+    max-height: 6rem;
+}
+.secondary-content{
+    flex-grow: 1;
+}

@@ -1,0 +1,51 @@
+.homepage{
+    height: 100%;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.apt-container{
+    background-color: rgba(245, 245, 245, .03);
+    height: 13rem;
+    width: 13rem;
+    margin: 0 1rem;
+    display: inline-block;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.dragging{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.dragging-over{
+    background-color: rgba(255, 0, 191, 0.3);
+}
+
+
+.apt-container .apt-img{
+    max-width: 10rem;
+    max-height: 10rem;
+    cursor: pointer;
+}
+
+.homepage-footer{
+    height: 10rem;
+    width: 80%;
+    align-self: flex-end;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 4rem;
+    
+}
+
+

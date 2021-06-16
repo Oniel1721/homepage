@@ -1,0 +1,11 @@
+<div (dragover)="onDragOver($event)"  (drop)="onDrop($event)" id="homepage" class="homepage">
+    <ng-template ngFor let-apt [ngForOf]="apts">
+        <div (click)="apt.action?apt.action():aptDefaultAction($event)" (dragstart)="onDragStart($event)" (dragend)="onDragEnd($event)" [draggable]="true" class="apt-container">
+            <img *ngIf="apt.name && apt.img" (mouseout)="onMouseOut($event)" (mouseover)="onMouseOver($event)" class="apt-img" draggable="false" [src]="apt.img" [alt]="apt.name">
+            <!-- <app-apt *ngIf="apt.name" [apt]="apt"></app-apt> -->
+        </div>
+    </ng-template>
+    <div draggable="true" class="homepage-footer">
+        <h3 *ngIf="footerText">{{footerText}}</h3>
+    </div>
+</div>
